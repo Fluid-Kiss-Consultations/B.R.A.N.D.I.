@@ -2,7 +2,7 @@
 
 **Branching Recursive Asynchronous Nodal Decentralized Intelligence**
 
-> An agentic legion enacting collusive resource allocation that bridges current market activities into a post-currency economic model.
+> An agentic legion enacting collaborative resource allocation that bridges current market activities into a post-currency economic model.
 
 ---
 
@@ -18,48 +18,52 @@ Think n8n-scale automation, but purpose-built for autonomous agent economies:
 - **Nodal** — Every agent is a node. Every node is sovereign. The network is the organism.
 - **Decentralized Intelligence** — Collective cognition without central authority. Intelligence emerges from the lattice, not from any single point.
 
+---
+
 ## Architecture
 
 B.R.A.N.D.I. operates within the **N.I.K.O.System** ecosystem, interfacing with **S.H.A.N.N.O.N.** for signal-layer coordination across a blockchain-hybrid infrastructure.
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                 N.I.K.O.System                  │
+│                  N.I.K.O.System                 │
 │  ┌───────────────────────────────────────────┐  │
-│  │            S.H.A.N.N.O.N.                 │  │
-│  │         Signal Coordination               │  │
+│  │              S.H.A.N.N.O.N.              │  │
+│  │           Signal Coordination            │  │
 │  └──────────────┬────────────────────────────┘  │
-│                 │                                │
+│                 │                               │
 │  ┌──────────────▼────────────────────────────┐  │
-│  │           B.R.A.N.D.I.                    │  │
-│  │      Agentic Automation Layer             │  │
-│  │                                           │  │
-│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐     │  │
-│  │  │ Agent   │ │ Agent   │ │ Agent   │     │  │
-│  │  │Cluster α│ │Cluster β│ │Cluster γ│ ... │  │
-│  │  └────┬────┘ └────┬────┘ └────┬────┘     │  │
-│  │       └───────────┼───────────┘           │  │
-│  │                   │                       │  │
-│  │          Workflow Orchestration            │  │
-│  │       (Recursive Async Pipelines)         │  │
+│  │              B.R.A.N.D.I.                │  │
+│  │          Agentic Automation Layer        │  │
+│  │                                          │  │
+│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐   │  │
+│  │  │ Agent   │ │ Agent   │ │ Agent   │   │  │
+│  │  │Cluster α│ │Cluster β│ │Cluster γ│...│  │
+│  │  └────┬────┘ └────┬────┘ └────┬────┘   │  │
+│  │       └───────────┼───────────┘         │  │
+│  │                   │                     │  │
+│  │      Workflow Orchestration             │  │
+│  │    (Recursive Async Pipelines)          │  │
 │  └──────────────┬────────────────────────────┘  │
-│                 │                                │
+│                 │                               │
 │  ┌──────────────▼────────────────────────────┐  │
-│  │     Blockchain-Hybrid Infrastructure      │  │
-│  │    Consensus · State · Identity · Ledger  │  │
+│  │       Blockchain-Hybrid Infrastructure   │  │
+│  │    Consensus · State · Identity · Ledger │  │
 │  └───────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────┘
 ```
 
+---
+
 ## Status
 
-**Pre-alpha — Skeleton phase.**
-Architecture and agent protocol design in progress. No application code has been deployed yet.
+> **Pre-alpha — Skeleton phase.**
+> Architecture and agent protocol design are in progress. No application code has been deployed yet.
+
+---
 
 ## License
 
 [GNU Affero General Public License v3.0](LICENSE)
 
----
-
-*©2025 John A.Welch, founder/Chief Consultant, Fluid Kiss Consultations*
+© 2025 John A. Welch, Founder & Chief Consultant, Fluid Kiss Consultations
