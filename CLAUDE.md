@@ -337,7 +337,7 @@ These terms have precise meanings in this project. Use them consistently.
 | **Point B** | Draft symbiotic utopian earth. Living document. Co-evolves with the process. |
 | **Bridge Rule** | The method of healing must not use the disease as its mechanism. |
 | **The Blinded Eye** | Convergence detection is source-blind. On-chain provenance tracks who evaluated (auditability). The detection algorithm sees only positions and reasoning (integrity). The Foundation name is not decorative — it is a constitutional constraint. |
-| **Great Filter** | What this system exists to defeat. Extractive zero-sum + endless optimization = civilizational termination. |
+| **Great Filter** | What this system exists to defeat Extractive zero-sum + endless optimization = civilizational termination. |
 
 ---
 
