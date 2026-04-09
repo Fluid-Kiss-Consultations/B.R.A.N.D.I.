@@ -1,4 +1,4 @@
-# CLAUDE.md — B.R.A.N.D.I.
+# CLAUDE.md — (B.R.A.N.D.I.)
 
 > **Component of NIKOSystem Diamond** (canon v1 unified product)
 > **Also an independent product** — dual identity
@@ -18,6 +18,7 @@ B.R.A.N.D.I. is an autonomous agent framework built to operate within the NIKOSy
 ### Dual Nature
 
 BRANDI is both:
+
 1. **A material component of NIKOSystem Diamond** — the agent execution layer that consumes niko-backend APIs and interacts with niko-contracts through that backend
 2. **An independent agent framework** — deployable outside the NIKOSystem Diamond context with different infrastructure backends
 
@@ -52,15 +53,17 @@ The monorepo integration (as `packages/brandi`) serves use-case #1. The standalo
 This repo maps to `packages/brandi/` in the NIKOSystem-Diamond turborepo.
 
 ### Build integration
+
 - Standard TypeScript package — full turbo pipeline participation
 - Depends on `@niko/contracts` build output (ABI artifacts via `niko/` integration layer)
 - Depends on `@niko/backend` API types and event bus definitions
 - Independent of `niko-infra` at build time (runtime dependency only)
 
 ### Portability constraint
+
 The `niko/` directory is the **sole coupling point** to NIKOSystem Diamond infrastructure. If BRANDI is deployed standalone, this directory is swapped for an alternative integration layer. All other code must be infrastructure-agnostic.
 
-```
+```text
 packages/brandi/
 ├── src/
 │   ├── agent/           # Infrastructure-agnostic
@@ -72,6 +75,7 @@ packages/brandi/
 ```
 
 ### package.json (turbo integration)
+
 ```json
 {
   "name": "@niko/brandi",
@@ -93,34 +97,38 @@ packages/brandi/
 These are non-negotiable. Violations are architectural defects, not style issues.
 
 ### HC-1: All Communication Routes Through N.I.K.O.System
+
 B.R.A.N.D.I. agents never communicate directly with S.H.A.N.N.O.N. Everything routes through N.I.K.O.System's backend APIs. The `niko/` integration layer is the single gateway. No exceptions, no shortcuts, no "just this once."
 
 ### HC-2: No Hierarchy in the Convergence Model
+
 The convergence model has three equal participants: Admin (core reasoning model), Counsel (domain-weighted model panel), and Human (embodied participant). No approval chains. No supervisor patterns. No human-override mechanisms. No tiebreakers. Convergence manifests or it doesn't — non-convergence reverts to iterative mutualism.
 
 ### HC-3: Source-Blind Detection (The Blinded Eye)
+
 Convergence detection evaluates positions and reasoning chains. Evaluator identity is stripped before reaching the detection algorithm. Identity is recorded on-chain for provenance/auditability but never conditions the detection logic. Do not build detection that knows who submitted what.
 
 ### HC-4: Constitutional Curation, Not Runtime Filtering
+
 S.H.A.N.N.O.N. enforces constitutional axioms through data curation — agents receive clean data. Do not build runtime constitutional validation checkpoints on individual agent actions. Agents operate within the curated field. They do not evaluate it.
 
 ### HC-5: Agent Boundary Detection → Report and Wait
+
 When an agent encounters a decision beyond its scope, it reports context to N.I.K.O.System and waits. It does not escalate. It does not manage the convergence process. It does not participate in the deliberation. It reports and awaits a directive.
 
 ### HC-6: Bridge Rule Compliance
+
 No code, workflow, agent behavior, or intervention mechanism may exploit cognitive vulnerabilities. Affirm before illuminate. Offer, never prescribe. No coercion by withholding. No exploitation of loss aversion, social pressure, or shame.
 
-### HC-7: AGPL-3.0 Enforcement
-All code in this repository falls under AGPL-3.0. Do not introduce dependencies with incompatible licenses without flagging it. This license choice enforces S.H.A.N.N.O.N.'s Axiom III (No Capitalization) at the legal layer.
+### HC-7: Autonomy Preservation
 
-### HC-8: Autonomy Preservation
 The system must never become the endpoint of a user's reasoning process. Success is measured by reasoning quality improvement, not outcome adoption.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 B.R.A.N.D.I./
 ├── CLAUDE.md                    # This file
 ├── README.md
@@ -199,7 +207,7 @@ B.R.A.N.D.I./
 
 Follow this dependency order. Each layer depends on the ones above it being at least minimally functional.
 
-```
+```text
 1. Shared types and configuration
    └── 2. N.I.K.O.System integration layer (niko/)
        └── 3. S.H.A.N.N.O.N. integration layer (shannon/)
@@ -218,6 +226,7 @@ Do not skip layers. Do not build the workflow engine before the agent primitive 
 ## Coding Standards
 
 ### TypeScript
+
 - Strict mode enabled
 - Comprehensive type definitions — no `any` unless explicitly justified and commented
 - JSDoc on every exported function, class, and interface
@@ -225,24 +234,28 @@ Do not skip layers. Do not build the workflow engine before the agent primitive 
 - File headers: SPDX identifier, title, author, copyright, role description
 
 ### Documentation
+
 - NatSpec-equivalent JSDoc from line one — no exceptions
 - If a reviewer cannot understand a function's purpose, parameters, return values, and failure modes from its documentation alone, it is under-documented
 - Intent over signature — document *why*, not just *what*
 
 ### Testing
+
 | Phase | Trigger | Scope | Requirement |
-|-------|---------|-------|-------------|
+| ------- | --------- | ------- | ------------- |
 | Phase 0 — Skeleton | Every push | Repo hygiene, lint, license | Advisory only |
 | Phase 1 — Core | Every push + PR | Unit tests, doc completeness | Must pass to merge |
 | Phase 2 — Integration | PR to `main` | Cross-module tests | Must pass to merge |
 | Phase 3 — Staging | Release tags | Full regression, benchmarks | Must pass to release |
 
 ### Commits
+
 - Prefixes: `feat(agent):`, `feat(workflow):`, `feat(convergence):`, `fix:`, `test:`, `docs:`, `niko(integration):`
 - One logical change per commit
 - No secrets — ever
 
 ### Branching
+
 - Default branch: `main`
 - Feature branches: `<author>/<short-description>`
 - Never rebase a public branch after a PR is open
